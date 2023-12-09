@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/fondo.jpeg);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* NAVBAR */
+
+.Navbar {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar .logo img {
+    height: 50px;
+}
+
+.Navbar #search input[type="text"] {
+    padding: 5px;
+}
+
+.Navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Navbar nav ul li a {
+    color: white;
+    text-decoration: none;       /*color de inicio /genero /favoritos*/
+}
+.busqueda{
+    margin: 0px 5px 0px 5px;
+}
+
+@media (max-width: 500px)  {
+    .listaNavbar {
+        flex-direction: column;
+    }
+
+    .Navbar #search input[type="text"] {
+        padding: 1px;
+        width: 60px;
+    }
+
+    .header #search {
+        margin-left: 10px;
+    }
+
+    
+}
+
+/* INDEX */
+.loader{
+    color: whitesmoke;
+}
+.listaPeliculasIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.peliculaIndex {
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1); /* sombra*/
+    width: 250px;
+    height: 450px;
+    text-align: center;
+    color: whitesmoke;
+    transition: 0.2s;
+}
+
+.imagenPeliculaIndex {
+    width: 200px;
+    height: 300px;   
+}
+
+.detalles{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media (max-width: 1390px)  {
+    .listaPeliculasIndex {
+        justify-content: center;
+    }
+}
+
+
+/* DETALLES PELICULAS */
+
+.boxDetallePelicula{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulosdetalle{
+    color: whitesmoke;
+    margin-left: 7%;
+}
+
+.infodetalle{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 85vh;
+    background-color: black;    
+}
+
+.video{
+    width: 70vw;
+    height: 85vh;
+}
+
+.favoritos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.fav{
+    width: auto;
+    height: auto;
+    background-color: black;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.recomendaciones{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.verRecomendaciones{
+    background-color: black;
+    color: whitesmoke;
+    border: whitesmoke;
+    padding: 10px;
+}
+.verRecomendaciones:hover{
+    transform: scaleY(1.06);
+    box-shadow: 0 0 20px rgba(253, 252, 252, 0.742);
+}
+
+@media (max-width: 1350px)  {
+    .video {
+        width: 50vw;
+        height: 65vh;
+        margin-left: 8vw;
+    }
+
+    .infodetalle {
+        font-size: small;
+    }
+}
+
+@media (max-width: 700px)  {
+    .boxDetallePelicula {
+        flex-direction: column;
+    }
+
+    .infodetalle {
+        font-size: small;
+        width: 100%;
+        height: auto;
+    }
+
+    .trailer {
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    .video {
+        width: 50vw;
+        height: 25vh;
+        margin-left: 8vw;
+    }
+}
+
+/* GENEROS */
+
+.listaDeGeneros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2% 2% 2% 2%;
+}
+.Genero{
+    color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+.ElGenero:hover{
+    text-shadow: 0px 10px 15px rgba(252, 252, 252, 252)
+}
+.generoadetalle{
+    text-decoration: none;
+    margin: 2%;
+}
+.listaDeGeneros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width: 600px){
+    .Genero{
+        width: 45vw;
+    }
+}
+.enlacecruzado{
+    text-decoration: none;
+}
+.titulosss{
+    color: whitesmoke;
+    margin-left: 10%;
+}
+/* BUSQUEDA */
+.busqueda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.titulos{
+    margin-left: 40px;
+    margin-bottom: 40px;
+    color: whitesmoke;
+}
+
+.peliculaIndex:hover{
+    transform: scaleY(1.05);
+    box-shadow: 0 0 20px rgba(255, 254, 254, 0.744);
+}
+.logoTMDB{
+    height: 15px;
+}
